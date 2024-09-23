@@ -12,8 +12,14 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      cursor: {
+        override: "url(cursor.svg), auto",
+        "override-dark": "url(cursor-dark.svg), auto",
+      },
     },
   },
   plugins: [],
+
+  darkMode: "class",
 };
 export default config;
