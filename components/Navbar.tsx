@@ -5,9 +5,10 @@ import { useState } from "react";
 export function Navbar() {
   return (
     <header className="flex w-full items-center justify-between gap-4 p-5 md:px-40">
-      <p className="max-sm:text-md font-light text-zinc-900 underline decoration-[#008AFF] decoration-wavy transition-all duration-100 dark:text-slate-50 sm:text-2xl">
-        chandru
-      </p>
+      <div className="site-title max-sm:text-md h-6 w-32 cursor-pointer px-1 font-light tracking-widest text-zinc-900 transition-all duration-100 dark:text-slate-50 sm:text-2xl">
+        <span className="view-a">chandru</span>
+        <span className="view-b text-nowrap">suresh💻</span>
+      </div>
       <div className="flex items-center justify-end gap-2">
         <Link href="/" className="nav-link-line p-2 font-light">
           <p className="text-md transition-all duration-100 max-sm:text-xs">home</p>
@@ -15,7 +16,7 @@ export function Navbar() {
         <Link href="/projects" className="nav-link-line p-2 font-light">
           <p className="text-md transition-all duration-100 max-sm:text-xs">projects</p>
         </Link>
-        <Link href="posts" className="nav-link-line p-2 font-light">
+        <Link href="/posts" className="nav-link-line p-2 font-light">
           <p className="text-md transition-all duration-100 max-sm:text-xs">posts</p>
         </Link>
         <ThemeToggle />
