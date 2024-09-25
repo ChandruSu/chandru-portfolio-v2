@@ -24,6 +24,7 @@ export function PostTimeline({ posts }: { posts: Post[] }) {
 
   return (
     <div className="flex flex-col gap-5 pl-4">
+      <h3 className="text-lg font-light text-zinc-500">All posts</h3>
       {years.map((year, index) => {
         const byMonth = _.groupBy(byYear[year], (v) => new Date(v.date).getMonth());
         const months = Object.keys(byMonth).sort().toReversed();
