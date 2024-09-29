@@ -3,6 +3,7 @@ import posts from "./posts.json";
 import Link from "next/link";
 import { PostDetailsBar } from "@/components/PostDetailsBar";
 import { PostTimeline } from "@/components/PostTimeline";
+import { CommentsSection } from "@/components/CommentsSection";
 
 export default function PostLayout({ children }: { children: React.ReactNode; params: any }) {
   return (
@@ -21,7 +22,10 @@ export default function PostLayout({ children }: { children: React.ReactNode; pa
         </div>
 
         {/* MDX contents of post */}
-        <div>{children}</div>
+        <div className="flex flex-col gap-5">
+          {children}
+          <CommentsSection />
+        </div>
 
         {/* Links to other posts */}
         <div>

@@ -12,17 +12,20 @@
   "dependencies": {
     "@fontsource/poppins": "^5.1.0",
     "@fontsource/quicksand": "^5.1.0",
+    "@giscus/react": "^3.0.0",
     "@mdx-js/loader": "^3.0.1",
     "@mdx-js/react": "^3.0.1",
     "@next/mdx": "^14.2.13",
     "@types/lodash": "^4.17.7",
     "@types/mdx": "^2.0.13",
     "@types/react-syntax-highlighter": "^15.5.13",
+    "giscus": "^1.5.0",
     "lodash": "^4.17.21",
     "next": "14.2.13",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-latex-next": "^3.0.0",
     "react-syntax-highlighter": "^15.5.0"
   },
   "devDependencies": {
