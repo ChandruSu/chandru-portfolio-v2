@@ -4,6 +4,7 @@ import { Post } from "@/types";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { GitHubIcon, LinkIcon } from "./Icons";
+import { SlideLink } from "./SlideLink";
 
 export function PostDetailsBar({ posts }: { posts: Post[] }) {
   const matches = /^\/posts\/(.+)$/.exec(usePathname());
@@ -15,20 +16,22 @@ export function PostDetailsBar({ posts }: { posts: Post[] }) {
     <>
       <div className="flex flex-col gap-3 pr-4 max-md:flex-row">
         {post?.githubURL && (
-          <Link href={post.githubURL}>
-            <div className="flex items-center justify-between gap-2 rounded-md border border-slate-900 bg-slate-50 px-4 py-1.5 transition-transform duration-200 hover:-translate-y-0.5 dark:border-slate-50">
-              <p className="font-semibold text-zinc-900">GitHub</p>
-              <GitHubIcon className="shrink-0 brightness-0" />
-            </div>
-          </Link>
+          <SlideLink
+            label="GitHub"
+            link={post.githubURL}
+            icon={
+              <GitHubIcon className="duration-50 shrink-0 brightness-0 transition-all hover:delay-200 group-hover:brightness-100" />
+            }
+          />
         )}
         {post?.link && (
-          <Link href={post.link}>
-            <div className="flex items-center justify-between gap-2 rounded-md border border-slate-900 bg-slate-50 px-4 py-1.5 transition-transform duration-200 hover:-translate-y-0.5 dark:border-slate-50">
-              <p className="font-semibold text-zinc-900">URL</p>
-              <LinkIcon className="shrink-0 brightness-0" />
-            </div>
-          </Link>
+          <SlideLink
+            label="URL"
+            link={post.link}
+            icon={
+              <LinkIcon className="duration-50 shrink-0 brightness-0 transition-all delay-200 group-hover:brightness-100" />
+            }
+          />
         )}
       </div>
       <div className="flex flex-wrap gap-1">

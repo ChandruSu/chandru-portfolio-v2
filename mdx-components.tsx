@@ -10,14 +10,18 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h3: ({ children }) => <h3 className="py-1 text-xl font-medium">{children}</h3>,
     h4: ({ children }) => <h4 className="py-1 text-lg font-medium">{children}</h4>,
     h5: ({ children }) => <h5 className="text-md py-1 font-medium">{children}</h5>,
-    p: ({ children }) => <p className="py-3 text-justify font-light">{children}</p>,
+    p: ({ children }) => (
+      <p className="py-3 font-light max-md:text-sm md:text-justify">{children}</p>
+    ),
     a: ({ children, ...properties }) => (
       <a className="link-line relative" {...properties}>
         <span>{children}</span>
       </a>
     ),
-    ol: ({ children }) => <ol className="list-disc pl-10 font-light">{children}</ol>,
-    ul: ({ children }) => <ul className="list-decimal pl-10 font-light">{children}</ul>,
+    ol: ({ children }) => <ol className="list-disc pl-10 font-light max-md:text-sm">{children}</ol>,
+    ul: ({ children }) => (
+      <ul className="list-decimal pl-10 font-light max-md:text-sm">{children}</ul>
+    ),
     code: ({ className, ...properties }) => {
       const match = /language-(\w+)/.exec(className || "");
       return match ? (

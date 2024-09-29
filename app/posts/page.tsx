@@ -28,12 +28,13 @@ export default function Page({ searchParams }: { searchParams?: { [key: string]:
                   <Link href={`/posts/${post.slug}`} className="text-lg">
                     {post.title}
                   </Link>
-                  <p className="text-justify text-sm font-light text-zinc-400">
+                  <p className="text-sm font-light text-zinc-400 md:text-justify">
                     {post.description}
                   </p>
                 </li>
               ))}
             </ul>
+            <hr className="mt-4 opacity-50" />
           </div>
         ))}
       </div>
