@@ -1,11 +1,11 @@
-import { ArrowIcon, GitHubIcon } from "@/components/Icons";
+import { ArrowIcon } from "@/components/Icons";
 import posts from "./posts.json";
 import Link from "next/link";
 import { PostDetailsBar } from "@/components/PostDetailsBar";
 import { PostTimeline } from "@/components/PostTimeline";
 import { CommentsSection } from "@/components/CommentsSection";
 
-export default function PostLayout({ children }: { children: React.ReactNode; params: any }) {
+export default function PostLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex w-full flex-col items-center">
       <div className="grid w-full max-w-[70rem] max-md:grid-rows-[auto_auto_auto] max-md:gap-6 md:grid-cols-[1fr_3fr_1fr] md:gap-4">

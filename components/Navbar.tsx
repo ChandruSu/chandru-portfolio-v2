@@ -1,6 +1,5 @@
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
-import { useState } from "react";
 
 export function Navbar() {
   return (
