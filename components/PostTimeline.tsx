@@ -1,5 +1,5 @@
 import _ from "lodash";
-import { Post } from "@/types";
+import { Post } from "@/lib/types";
 import Link from "next/link";
 import { Fragment } from "react";
 import { getMonthName } from "@/lib/utils";
