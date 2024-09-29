@@ -32,8 +32,8 @@ button {
   z-index: 1;
 }
 
-.link-line>p,
-.link-line>span {
+.link-line > p,
+.link-line > span {
   z-index: 1;
   position: relative;
 }
@@ -96,7 +96,7 @@ button {
   position: relative;
 }
 
-.site-title>.view-a {
+.site-title > .view-a {
   position: absolute;
   top: 0;
   left: 0;
@@ -106,7 +106,7 @@ button {
   pointer-events: none;
 }
 
-.site-title>.view-b {
+.site-title > .view-b {
   position: absolute;
   top: 0;
   left: 0;
@@ -116,11 +116,11 @@ button {
   pointer-events: none;
 }
 
-.site-title:hover>.view-a {
+.site-title:hover > .view-a {
   transform: rotateX(90deg);
 }
 
-.site-title:hover>.view-b {
+.site-title:hover > .view-b {
   transform: rotateX(0deg);
 }
 

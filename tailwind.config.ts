@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        helv: ['"Helvetica"', 'sans-serif']
+        helv: ['"Helvetica"', "sans-serif"],
       },
       colors: {
         background: "var(--background)",
