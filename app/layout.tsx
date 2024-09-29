@@ -28,7 +28,7 @@ export default function RootLayout({
         className={`${poppins.className} cursor-override-dark antialiased dark:cursor-override`}
       >
         <RootProviders>
-          <div className="flex h-0 min-h-screen w-full flex-col overflow-x-hidden bg-slate-50 p-0 dark:bg-zinc-950">
+          <div className="flex h-0 min-h-screen w-full flex-col overflow-x-hidden bg-light p-0 dark:bg-dark">
             <Navbar />
             <main className="grow p-8">{children}</main>
             <Footer />

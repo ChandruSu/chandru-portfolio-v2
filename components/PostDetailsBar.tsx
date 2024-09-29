@@ -20,7 +20,7 @@ export function PostDetailsBar({ posts }: { posts: Post[] }) {
             label="GitHub"
             link={post.githubURL}
             icon={
-              <GitHubIcon className="duration-50 shrink-0 brightness-0 transition-all hover:delay-200 group-hover:brightness-100" />
+              <GitHubIcon className="duration-50 shrink-0 brightness-0 transition-all delay-200 group-hover:brightness-100" />
             }
           />
         )}

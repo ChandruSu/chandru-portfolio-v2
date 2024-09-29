@@ -2,7 +2,7 @@ import { GitHubIcon, ItchIOIcon, LinkedInIcon } from "./Icons";
 
 export function Footer() {
   return (
-    <footer className="flex items-center justify-center border-t border-slate-950 border-opacity-10 p-3 dark:border-white dark:border-opacity-10 max-sm:px-8 max-sm:py-6">
+    <footer className="flex items-center justify-center border-t border-dark border-opacity-10 p-3 dark:border-light dark:border-opacity-10 max-sm:px-8 max-sm:py-6">
       <div className="w-full items-center justify-center gap-4 max-sm:grid max-sm:grid-cols-2 max-sm:items-start max-sm:justify-items-center sm:flex">
         <a
           target="_blank"
