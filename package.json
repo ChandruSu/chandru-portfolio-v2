@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "npx prettier . --write"
+    "format": "npx prettier . --write",
+    "prepare": "husky"
   },
   "husky": {
     "hooks": {
@@ -25,7 +26,6 @@
     "@types/mdx": "^2.0.13",
     "@types/react-syntax-highlighter": "^15.5.13",
     "giscus": "^1.5.0",
-    "husky": "^9.1.6",
     "lodash": "^4.17.21",
     "next": "14.2.13",
     "next-themes": "^0.3.0",
@@ -40,6 +40,7 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.13",
+    "husky": "^4.3.8",
     "postcss": "^8",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.6",

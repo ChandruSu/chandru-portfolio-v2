@@ -21,7 +21,7 @@ export default function Page({ searchParams }: { searchParams?: { [key: string]:
             </Link>
           </div>
         ) : (
-          <h2 className="font-semibold text-light text-4xl text-center">All Posts</h2>
+          <h2 className="text-center text-4xl font-semibold text-light">All Posts</h2>
         )}
         {years.map((year) => (
           <div key={`section-${year}`} className="flex flex-col gap-3">
@@ -39,7 +39,9 @@ export default function Page({ searchParams }: { searchParams?: { [key: string]:
                     <div className="flex flex-wrap gap-2">
                       {post.tags.map((tag) => (
                         <Link key={`${post.slug}-${tag}`} href={`/posts?tag=${tag}`}>
-                          <div className="rounded-full bg-slate-400 bg-opacity-10 px-2 py-1 text-xs font-light">{tag}</div>
+                          <div className="rounded-full bg-slate-400 bg-opacity-10 px-2 py-1 text-xs font-light">
+                            {tag}
+                          </div>
                         </Link>
                       ))}
                     </div>

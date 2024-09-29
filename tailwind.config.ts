@@ -13,7 +13,7 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         dark: "#09090b",
-        light: "#f8fafc"
+        light: "#f8fafc",
       },
       cursor: {
         override: "url(cursor.svg), auto",
