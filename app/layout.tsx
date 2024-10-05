@@ -2,8 +2,6 @@ import { Poppins } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
 import RootProviders from "./providers";
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -25,15 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} cursor-override-dark antialiased dark:cursor-override`}
+        className={`${poppins.className} cursor-override-dark bg-light p-0 antialiased dark:cursor-override dark:bg-dark`}
       >
-        <RootProviders>
-          <div className="flex min-h-screen w-full flex-col overflow-x-hidden bg-light p-0 dark:bg-dark">
-            <Navbar />
-            <main className="grow p-8">{children}</main>
-            <Footer />
-          </div>
-        </RootProviders>
+        <RootProviders>{children}</RootProviders>
       </body>
     </html>
   );

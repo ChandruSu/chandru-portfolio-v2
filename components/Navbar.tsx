@@ -11,8 +11,8 @@ export function Navbar() {
         </div>
       </Link>
       <div className="flex items-center justify-end gap-2">
-        <Link href="/" className="nav-link-line p-2 font-light">
-          <p className="text-md transition-all duration-100 max-sm:text-xs">home</p>
+        <Link href="/work" className="nav-link-line p-2 font-light">
+          <p className="text-md transition-all duration-100 max-sm:text-xs">work</p>
         </Link>
         <Link href="/posts" className="nav-link-line p-2 font-light">
           <p className="text-md transition-all duration-100 max-sm:text-xs">posts</p>
