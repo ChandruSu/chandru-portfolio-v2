@@ -7,7 +7,7 @@ import { CommentsSection } from "@/components/CommentsSection";
 
 export default function PostLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex w-full flex-col items-center">
+    <div className="flex h-full w-full flex-col items-center">
       <div className="grid w-full max-w-[70rem] max-md:grid-rows-[auto_auto_auto] max-md:gap-6 md:grid-cols-[1fr_3fr_1fr] md:gap-4">
         {/* Return and tags */}
         <div className="flex flex-col gap-5">
