@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         helv: ['"Helvetica"', "sans-serif"],
+        roboto: ['"Roboto"', "sans-serif"],
       },
       colors: {
         background: "var(--background)",

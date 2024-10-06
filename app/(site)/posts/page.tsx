@@ -21,7 +21,9 @@ export default function Page({ searchParams }: { searchParams?: { [key: string]:
             </Link>
           </div>
         ) : (
-          <h2 className="text-center text-4xl font-semibold text-light">All Posts</h2>
+          <h2 className="text-center text-4xl font-semibold text-dark dark:text-light">
+            All Posts
+          </h2>
         )}
         {years.map((year) => (
           <div key={`section-${year}`} className="flex flex-col gap-3">

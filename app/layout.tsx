@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} cursor-override-dark bg-light p-0 antialiased dark:cursor-override dark:bg-dark`}
+        className={`${poppins.className} cursor-override-dark bg-light p-0 antialiased transition-colors dark:cursor-override dark:bg-dark`}
       >
         <RootProviders>{children}</RootProviders>
       </body>
