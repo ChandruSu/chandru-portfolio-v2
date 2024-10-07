@@ -6,21 +6,24 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className={`flex h-full min-h-screen w-full flex-col items-center justify-center`}>
-      <div className="flex flex-col items-center gap-3 pb-40 pt-20">
+      <div className="flex flex-col items-center gap-3 pb-56 pt-20">
         <LandingAnimation />
-        <h1 className="text-[5rem] font-thin tracking-wider">Chandru</h1>
+        <h1 className="text-[2.75rem] font-extralight tracking-wider">hey, im Chandru</h1>
         <div className="flex justify-center gap-5">
-          <Link href="/work" className="nav-link-line p-2 font-extralight tracking-wider">
-            <p className="text-3xl transition-all duration-100 max-sm:text-xs">Work</p>
+          <Link href="/work" className="link-line p-2 font-thin tracking-wider">
+            <p className="text-3xl transition-all duration-100 max-sm:text-xl">Work</p>
           </Link>
-          <Link href="/posts" className="nav-link-line p-2 font-extralight tracking-wider">
-            <p className="text-3xl transition-all duration-100 max-sm:text-xs">Posts</p>
+          <Link href="/posts" className="link-line p-2 font-thin tracking-wider">
+            <p className="text-3xl transition-all duration-100 max-sm:text-xl">Posts</p>
           </Link>
-          <Link href="/cv.pdf" className="nav-link-line p-2 font-extralight tracking-wider">
-            <p className="text-3xl transition-all duration-100 max-sm:text-xs">CV</p>
+          <Link href="/cv.pdf" className="link-line p-2 font-thin tracking-wider">
+            <p className="text-3xl transition-all duration-100 max-sm:text-xl">CV</p>
           </Link>
-          <Link href="/cv.pdf" className="nav-link-line p-2 font-extralight tracking-wider">
-            <p className="text-3xl transition-all duration-100 max-sm:text-xs">GitHub</p>
+          <Link
+            href="https://github.com/ChandruSu"
+            className="link-line p-2 font-thin tracking-wider"
+          >
+            <p className="text-3xl transition-all duration-100 max-sm:text-xl">GitHub</p>
           </Link>
         </div>
       </div>
