@@ -9,7 +9,7 @@ export default function Home() {
       <div className="flex flex-col items-center gap-3 pb-56 pt-20">
         <LandingAnimation />
         <h1 className="whitespace-nowrap px-20 text-[2.75rem] font-extralight tracking-wider max-sm:text-3xl">
-          hey, I`&apos;m Chandru
+          hey, I&apos;m Chandru
         </h1>
         <div className="flex justify-center gap-5">
           <Link href="/work" className="link-line p-2 font-thin tracking-wider">
