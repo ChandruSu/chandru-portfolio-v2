@@ -8,7 +8,9 @@ export default function Home() {
     <div className={`flex h-full min-h-screen w-full flex-col items-center justify-center`}>
       <div className="flex flex-col items-center gap-3 pb-56 pt-20">
         <LandingAnimation />
-        <h1 className="text-[2.75rem] font-extralight tracking-wider">hey, im Chandru</h1>
+        <h1 className="whitespace-nowrap px-20 text-[2.75rem] font-extralight tracking-wider max-sm:text-3xl">
+          hey, I`&apos;m Chandru
+        </h1>
         <div className="flex justify-center gap-5">
           <Link href="/work" className="link-line p-2 font-thin tracking-wider">
             <p className="text-3xl transition-all duration-100 max-sm:text-xl">Work</p>
