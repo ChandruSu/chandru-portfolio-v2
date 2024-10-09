@@ -35,7 +35,7 @@ export function PostTimeline({ posts }: { posts: Post[] }) {
                           className="transition-opacity duration-200 hover:opacity-70"
                         >
                           <Link href={`/posts/${post.slug}`}>
-                            <p className="text-xs font-light">{post.title}</p>
+                            <p className="text-sm font-light">{post.title}</p>
                           </Link>
                         </li>
                       ))}

@@ -17,7 +17,7 @@ export function CommentsSection() {
       reactionsEnabled="1"
       emitMetadata="1"
       inputPosition="top"
-      theme={theme === "light" ? "light" : "dark"}
+      theme={theme === "system" ? "preferred_color_scheme" : theme === "light" ? "light" : "dark"}
       lang="en"
       loading="lazy"
     />
