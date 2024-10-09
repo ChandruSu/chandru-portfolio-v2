@@ -5,10 +5,12 @@ import { lerp } from "three/src/math/MathUtils.js";
 
 export function LandingAnimation() {
   return (
-    <Canvas>
-      <ambientLight intensity={Math.PI / 2} />
-      <Content />
-    </Canvas>
+    <div className="flex max-w-full items-center justify-center overflow-hidden">
+      <Canvas>
+        <ambientLight intensity={Math.PI / 2} />
+        <Content />
+      </Canvas>
+    </div>
   );
 }
 

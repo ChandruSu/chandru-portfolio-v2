@@ -1,0 +1,41 @@
+<title>This is a test post</title>
+
+> 2024-10-01
+
+# New Portfolio Site!
+
+## V1 & V2
+
+This is the 3rd portfolio site I have built in the last 6 years. The biggest advesery in developing and maintaining a portfolio site is the reliablity of the site hosting service.
+
+In 2018, my first site was hosted on [000Webhost](https://www.000webhost.com/) who unceremoniously archived my site and I lost all my content - I did not save it on Github. It was made using HTML, CSS and a little bit of JQuery and was only used to store WebGL games
+
+The second site was hosted on Heroku, and was made in Django. Whilst Django itself uses SQLite for a simple local databse, when deploying on heroku, it switches to a Postgres database. This service was originally free, but removed in November 2022 for free-tier customers.
+
+## V3 i.e This one
+
+import { Ltx } from "@/components/Latex";
+
+This site is built with NextJS, and hosted on [Vercel](https://vercel.com/) (the creators of NextJS). Whilst I can't speak to the reliability of Vercel for long-term hosting, as they may pull a Heroku down the line, I would definitely commend them on having a holistic hosting service with many well-thoughtout products that enhance the developer experience
+
+Setting up the built pipeline and connecting it to a Github repository for automatic deployment was simple. Configuring the DNS records to set the domain name was a piece of cake, and Vercel even offer _[limited]_ postgres and redis services. Vercel also allows for preview builds, to view a PR on a staging environment and even using Vercel's Toolbar to leave notes and share feedback with your team
+
+Here is a full list of tools and platforms used to build this site:
+
+- NextJS for routing, SSR and ISR
+- React for UI, no component libs used
+- TailwindCSS
+- MDX - to enable simple markdown posts that get converted into React
+- ThreeJS (just barely)
+- Cloudflare for DNS
+- Giscus for the comment sections under each post
+- The `react-latex-next` package for <Ltx val="\LaTeX"/> support
+- Vercel for hosting
+
+Outside of purchasing the domain name, everything required to build and host this site was free.
+
+You can view the full source code for the site [here](https://github.com/ChandruSu/chandru-portfolio-v2)
+
+## Why tho...
+
+I wanted a website, also on the rare occasions where a site prompts me for my website or _"all other relevant links"_, I feel bad not providing one.

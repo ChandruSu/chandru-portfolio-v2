@@ -18,6 +18,7 @@ const config: Config = {
         foreground: "var(--foreground)",
         dark: "#09090b",
         light: "#f8fafc",
+        grey: "#71717a",
       },
       cursor: {
         override: "url(cursor.svg), auto",

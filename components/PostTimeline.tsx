@@ -10,21 +10,21 @@ export function PostTimeline({ posts }: { posts: Post[] }) {
 
   return (
     <div className="flex flex-col gap-5 pl-4">
-      <h3 className="text-lg font-light text-zinc-500">All posts</h3>
+      <h3 className="text-lg font-light text-grey">All posts</h3>
       {years.map((year, index) => {
         const byMonth = _.groupBy(byYear[year], (v) => new Date(v.date).getMonth());
         const months = _.keys(byMonth).sort().toReversed();
 
         return (
           <Fragment key={year}>
-            {index > 0 && <hr className="bg-zinc-500 dark:opacity-20" />}
+            {index > 0 && <hr className="bg-grey dark:opacity-20" />}
             <div key={`timeline-yr-${year}`}>
               <p className="text-sm font-light text-[#008AFF]">{year}</p>
 
               <div className="flex flex-col gap-2">
                 {months.map((month) => (
                   <Fragment key={`timeline-${year}-${month}`}>
-                    <p className="text-xs font-light text-zinc-500">
+                    <p className="text-xs font-light text-grey">
                       {getMonthName(Number.parseInt(month))}
                     </p>
 

@@ -35,7 +35,7 @@ export default function Page({ searchParams }: { searchParams?: { [key: string]:
                     {post.title}
                   </Link>
                   <div className="flex flex-col gap-3">
-                    <p className="text-sm font-light text-zinc-400 md:text-justify">
+                    <p className="text-sm font-light text-grey md:text-justify">
                       {post.description}
                     </p>
                     <div className="flex flex-wrap gap-2">
