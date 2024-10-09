@@ -13,6 +13,23 @@ export const metadata: Metadata = {
   description:
     "The portfolio site of Chandru Suresh; British software engineer and computer programmer",
   keywords: "developer,portfolio,software",
+  openGraph: {
+    title: "Chandru Suresh",
+    description:
+      "The portfolio site of Chandru Suresh; British software engineer and computer programmer",
+    url: "https://chandru-su.com",
+    siteName: "Chandru Suresh Portfolio",
+    type: "website",
+    images: [
+      {
+        url: "https://chandru-su.com/metaimage.png",
+        secureUrl: "https://chandru-su.com/metaimage.png",
+        width: 1142,
+        height: 656,
+        alt: "Preview image for Chandru Suresh",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
