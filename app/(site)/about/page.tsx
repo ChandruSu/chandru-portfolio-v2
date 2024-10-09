@@ -1,3 +1,4 @@
+import { ProjectCard } from "@/components/ProjectCard";
 import { WorkSection } from "@/components/WorkSection";
 
 export default function About() {
@@ -37,7 +38,22 @@ export default function About() {
         </WorkSection>
 
         <h3 className="text-xl font-medium">Projects</h3>
-        <p>TBD...</p>
+        <div className="flex flex-col items-center gap-8">
+          <ProjectCard
+            title="Helium Interpreter"
+            year="2022"
+            link="https://github.com/ChandruSu/helium-interpreter"
+            description="Custom programming language interpreter written in C - dynamically typed, register-machine bytecode vm"
+            image="/projects/helium_thumbnail.gif"
+          />
+          <ProjectCard
+            title="OpenCL Raytracing Engine"
+            year="2022"
+            link="https://github.com/ChandruSu/opencl-raytracer"
+            description="A simple raytracing engine written in C++ using OpenCL for GPU accelerated parallel compute and OpenGL for presentation"
+            image="/projects/raytrace_thumbnail.png"
+          />
+        </div>
       </div>
     </div>
   );
