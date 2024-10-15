@@ -1,4 +1,4 @@
-import { GitHubIcon, ItchIOIcon, LinkedInIcon, LinkIcon } from "@/components/Icons";
+import { GitHubIcon, ItchIOIcon, LinkedInIcon } from "@/components/Icons";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SlideLink } from "@/components/SlideLink";
 import { WorkSection } from "@/components/WorkSection";
@@ -39,8 +39,8 @@ export default function About() {
           </ul>
         </WorkSection>
 
-        <h3 className="text-xl font-medium mt-3">Links</h3>
-        <div className="flex gap-4 max-sm:flex-col w-full">
+        <h3 className="mt-3 text-xl font-medium">Links</h3>
+        <div className="flex w-full gap-4 max-sm:flex-col">
           <SlideLink
             label="Github"
             link="https://github.com/ChandruSu"
@@ -68,8 +68,8 @@ export default function About() {
           />
         </div>
 
-        <h3 className="text-xl font-medium mt-3">Projects</h3>
-        <div className="flex flex-col w-full items-center gap-8">
+        <h3 className="mt-3 text-xl font-medium">Projects</h3>
+        <div className="flex w-full flex-col items-center gap-8">
           <ProjectCard
             title="Cohesive, Groupon on Stellar"
             year="2024"
