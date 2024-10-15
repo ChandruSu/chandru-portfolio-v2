@@ -12,7 +12,7 @@ interface ProjectCardProps {
 export function ProjectCard({ title, year, description, image, link }: ProjectCardProps) {
   return (
     <Link href={link ?? ""} className="w-full">
-      <div className="grid w-full grid-cols-[2fr_3fr] gap-5">
+      <div className="grid w-full max-md:grid-cols-1 md:grid-cols-[2fr_3fr] gap-5">
         <div className="flex justify-center">
           <Image
             src={image}
