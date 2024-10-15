@@ -4,11 +4,12 @@ interface SlideLinkProps {
   label: string;
   link: string;
   icon: React.ReactNode;
+  className?: string;
 }
 
-export function SlideLink({ label, link, icon }: SlideLinkProps) {
+export function SlideLink({ label, link, icon, className }: SlideLinkProps) {
   return (
-    <Link href={link}>
+    <Link href={link} className={className}>
       <div className="group relative flex items-center justify-between gap-2 overflow-hidden rounded-md border border-dark bg-light px-4 py-1.5 dark:border-light">
         <div className="absolute left-0 top-0 z-0 h-full w-0 bg-dark transition-all duration-500 group-hover:w-full" />
         <div className="z-20">

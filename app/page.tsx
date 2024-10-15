@@ -11,7 +11,7 @@ export default function Home() {
         <h1 className="whitespace-nowrap text-[2.75rem] font-extralight tracking-wider max-sm:text-3xl">
           hey, I&apos;m Chandru
         </h1>
-        <p className="text-center text-sm text-grey">
+        <p className="text-center text-md text-grey">
           Ex-SWE @ YC Startup, Computer science student @ KCL, London based Game developer and
           Software engineer
         </p>

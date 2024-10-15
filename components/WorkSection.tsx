@@ -19,9 +19,9 @@ export function WorkSection({ link, imageUrl, children, dates }: WorkSectionProp
           className="aspect-square max-w-[6rem] rounded"
         />
       </a>
-      <div className="flex w-full flex-col gap-4 text-sm">
+      <div className="flex w-full flex-col gap-4 text-md">
         {children}
-        <p className="text-right text-sm text-grey">{dates}</p>
+        <p className="text-right text-sm">{dates}</p>
       </div>
     </div>
   );
