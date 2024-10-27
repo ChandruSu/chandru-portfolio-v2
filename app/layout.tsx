@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { Poppins } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
@@ -43,6 +44,7 @@ export default function RootLayout({
         className={`${poppins.className} cursor-override-dark bg-light p-0 antialiased transition-colors dark:cursor-override dark:bg-dark`}
       >
         <RootProviders>{children}</RootProviders>
+        <Analytics />
       </body>
     </html>
   );
