@@ -1,6 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @import "@fontsource/poppins/100.css";
 @import "@fontsource/poppins/200.css";
@@ -11,6 +8,27 @@
 @import "@fontsource/poppins/700.css";
 @import "@fontsource/poppins/800.css";
 @import "@fontsource/poppins/900.css";
+
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-helv: "Helvetica", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-dark: #09090b;
+  --color-light: #f8fafc;
+  --color-grey: #71717a;
+
+  --cursor-override: url("/cursor.svg"), auto;
+  --cursor-override-dark: url("/cursor-dark.svg"), auto;
+
+  --list-style-type-disclosure-closed: disclosure-closed;
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;

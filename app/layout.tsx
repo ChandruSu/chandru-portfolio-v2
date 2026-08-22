@@ -1,3 +1,4 @@
+
 import { Analytics } from '@vercel/analytics/react';
 import { Poppins } from "next/font/google";
 import type { Metadata } from "next";
@@ -39,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${poppins.className} cursor-override-dark bg-light p-0 antialiased transition-colors dark:cursor-override dark:bg-dark`}
       >

@@ -2,8 +2,8 @@ import posts from "./(posts)/posts.json";
 import _ from "lodash";
 import Link from "next/link";
 
-export default function Page({ searchParams }: { searchParams?: { [key: string]: string } }) {
-  const tag = searchParams?.["tag"];
+export default async function Page({ searchParams }: { searchParams?: Promise<{ [key: string]: string }> }) {
+  const tag = (await searchParams)?.["tag"];
   const byYear = _.groupBy(
     posts.filter((p) => !tag || p.tags.includes(tag)),
     (p) => new Date(p.date).getFullYear(),
@@ -15,7 +15,7 @@ export default function Page({ searchParams }: { searchParams?: { [key: string]:
         {tag ? (
           <div className="flex">
             <Link href="/posts">
-              <div className="rounded-full bg-slate-400 bg-opacity-10 px-2 py-1 text-sm font-light">
+              <div className="rounded-full bg-slate-400/10 px-2 py-1 text-sm font-light">
                 search-tag: {tag}
               </div>
             </Link>
@@ -41,7 +41,7 @@ export default function Page({ searchParams }: { searchParams?: { [key: string]:
                     <div className="flex flex-wrap gap-2">
                       {post.tags.map((tag) => (
                         <Link key={`${post.slug}-${tag}`} href={`/posts?tag=${tag}`}>
-                          <div className="rounded-full bg-slate-400 bg-opacity-10 px-2 py-1 text-xs font-light">
+                          <div className="rounded-full bg-slate-400/10 px-2 py-1 text-xs font-light">
                             {tag}
                           </div>
                         </Link>

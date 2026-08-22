@@ -1,13 +1,11 @@
 "use client";
 
-import { LandingAnimation } from "@/components/LandingMagic";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className={`flex h-full min-h-screen w-full flex-col items-center justify-center`}>
       <div className="flex flex-col items-center gap-3 px-4 pb-20 max-sm:pb-10">
-        <LandingAnimation />
         <h1 className="whitespace-nowrap text-[2.75rem] font-extralight tracking-wider max-sm:text-3xl">
           hey, I&apos;m Chandru
         </h1>

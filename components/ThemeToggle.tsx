@@ -9,7 +9,7 @@ export default function ThemeToggle({ className = "" }: { className?: string }) 
 
   return (
     <button
-      className={"flex flex-row items-center justify-center gap-1 overflow-hidden p-2 " + className}
+      className={"flex flex-row items-center justify-center gap-1 overflow-hidden p-2 cursor-pointer " + className}
       onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
     >
       <div className="aspect-square h-[24px] w-[24px] overflow-hidden">
