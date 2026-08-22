@@ -1,0 +1,12 @@
+[
+  {
+    "title": "New portfolio site",
+    "type": "post",
+    "slug": "new-portfolio-site",
+    "description": "How this site was built, what tools were used, why it was build. Also this is the first article to test that the 'posts' section actually works properly.",
+    "tags": ["frontend", "typescript", "nextjs", "mdx"],
+    "date": "2024-10-01",
+    "githubURL": "https://github.com/ChandruSu/chandru-portfolio-v2",
+    "link": "https://chandru-su.com/"
+  }
+]

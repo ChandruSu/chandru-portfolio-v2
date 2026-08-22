@@ -1,0 +1,45 @@
+{
+  "name": "chandru-portfolio-v2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@fontsource/poppins": "^5.3.0",
+    "@fontsource/quicksand": "^5.3.0",
+    "@fontsource/roboto": "^5.3.0",
+    "@giscus/react": "^3.1.0",
+    "@mdx-js/loader": "^3.1.1",
+    "@mdx-js/react": "^3.1.1",
+    "@next/mdx": "^16.3.2",
+    "@vercel/analytics": "^2.0.1",
+    "giscus": "^1.6.0",
+    "katex": "^0.18.4",
+    "lodash": "^4.18.1",
+    "next": "16.3.2",
+    "next-themes": "^0.4.6",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-latex-next": "^3.0.0",
+    "react-syntax-highlighter": "^16.1.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/lodash": "^4.17.25",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.2",
+    "husky": "^9.1.7",
+    "prettier": "^3.9.6",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@11.21.0"
+}
