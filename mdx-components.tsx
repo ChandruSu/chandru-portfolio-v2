@@ -30,7 +30,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
           language={match[1]}
           showLineNumbers
           PreTag="div"
-          {...(properties as any)}
+          {...properties}
         />
       ) : (
         <code className={className} {...properties} />
