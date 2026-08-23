@@ -8,5 +8,15 @@
     "date": "2024-10-01",
     "githubURL": "https://github.com/ChandruSu/chandru-portfolio-v2",
     "link": "https://chandru-su.com/"
+  },
+  {
+    "title": "Armoury I",
+    "type": "post",
+    "slug": "armoury-editor",
+    "description": "A novel take on markdown text editors, focused on enhancing developer experience using markdown directives.",
+    "tags": ["markdown", "golang", "wails", "desktop", "typescript", "react"],
+    "date": "2026-08-20",
+    "githubURL": "https://github.com/ChandruSu/armoury-releases",
+    "link": "https://armoury.lol/"
   }
 ]

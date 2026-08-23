@@ -1,0 +1,68 @@
+<title>Armoury Editor | Chandru Suresh</title>
+
+> 2024-08-20
+
+# Armoury I
+
+In June of 2026, we started the Armoury editor project starting with a simple objective: develop a Markdown editor that provides developer centric functionality.
+
+The ethos of Armoury was to support smart notes to assist you in exploring your trains of thought, and we ultimately landed on using [Markdown Directives](https://github.com/remarkjs/remark-directive) as a solution.
+
+![Armoury: Read Mode](/armoury.png)
+
+You can find out more on the [Armoury Home Page](https://armoury.lol/)
+
+## Directives
+
+Markdown directives do not have a fixed specification, and seems to have origined from [this](https://talk.commonmark.org/t/generic-directives-plugins-syntax/444) thread, as a potential method for extending markdown. Markdown directives support: 
+- Inline directives that can be placed inside markdown blocks and paragraphs
+
+    ```css
+    :name[children]{ #id .classA .classB param1 param2=foo param3="foo bar" }
+    ```
+
+- Leaf directives that take up a whole line
+
+    ```css
+    ::name[children]{ #id .classA .classB param1 param2=foo param3="foo bar" }
+    ```
+
+- Container or block directives that can have markdown inside
+
+  ```css
+  :::name{ #id .classA .classB param1 param2=foo param3="foo bar" }
+  valid markdown
+  :::
+  ```
+
+Taking in CSS style classes and an ID, as well as keyword arguments and html children.
+
+By adding directives to our markdown app, we could support an extension system where custom widgets could be used in notes. If a user wanted a handy utility to lay out the colour palette for the website they are designing, we added the `:col` directive, which provides a handy colour picker. If a developer wanted to quickly test an endpoint, we added the `:::rest` directive that provided an inline cURL tool (similar to Postman). The goal was to package the app with a wide array of conveniences and utilities.
+
+## Simplicity
+
+Another key design philosophy we cemented early in our development was to maintain simplicity in note-taking. The goal of a notes app is to provide a user with a quick, reliable medium for projecting thoughts. The issue we took with market dominating platforms like Obsidian and Notion is the mental drain that comes with *setting up your second brain*.
+
+The goal of a productivity tool should be to boost productivity, not to suck up essential time and mental resources in organising or inventing note-taking systems. Whilst Obsidian and more complex PKMs have their place, our mission was to provide a sleeker surface for users to blurt out their thoughts whilst actively solving problems.
+
+The most important design choices we made to realise this goal was:
+
+1. **Ensure the app and notes load quickly and with as few steps as possible**. Features such as the `Open File` palette as well as preloading the most recently edited note helped achieve this. By also avoiding excessive bloat and needless dependencies, the app opens quickly with minimal friction.
+
+2. **Require / provide as little configuration**. The more a user can customise an application, the more it becomes a task onto itself. We will have opinionated features as the app should not become a project to be tweaked or worked on, distracting from the users pursuit. As a corollary to this, extensions should not allow users to restructure the flow of the app, only add new markdown components via the Directive system.
+
+3. **Minimal design**; as few windows as possible (even fewer once live preview is implemented) and view one tab at a time.
+
+## Stack
+
+The Armoury editor was developed using:
+
+- [Wails v3](https://v3.wails.io/) - a powerful cross platform app library that renders react via WebKit or WebView2 (windows). The project is still in Beta but is super cool.
+
+- The Golang programming language
+
+- React and Typescript for UI
+
+- React-markdown, Katex, remark and rehype for rich markdown support
+
+- [CodeMirror6](https://codemirror.net/) for the editor

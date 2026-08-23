@@ -6,13 +6,24 @@ import { WorkSection } from "@/components/WorkSection";
 export default function About() {
   return (
     <div className="flex h-full justify-center">
-      <div className="flex max-w-[50rem] grow flex-col gap-8 pb-16 font-light">
-        <h3 className="text-xl font-medium">Background</h3>
+      <div className="flex max-w-200 grow flex-col gap-8 pb-16 font-light">
+        <h2 className="text-4xl font-medium">Background</h2>
+
+        <WorkSection
+          link="https://www.starlingbank.com/"
+          imageUrl="/starling.png"
+          dates="2025 - Present"
+        >
+          <p>Starling Bank</p>
+          <p className="text-grey">
+            Software Engineer building out Security and Infrastructure tooling. Worked on transaction merchant metadata enrichment and forward flows.
+          </p>
+        </WorkSection>
 
         <WorkSection
           link="https://www.kcl.ac.uk/"
           imageUrl="/kcl_square.png"
-          dates="2021 - Present"
+          dates="2021 - 2025"
         >
           <p>King&apos;s College London</p>
           <p className="text-grey">
@@ -21,7 +32,7 @@ export default function About() {
           </p>
         </WorkSection>
 
-        <WorkSection link="https://tryterra.co" imageUrl="/terra.jpg" dates="July 2023 - July 2024">
+        <WorkSection link="https://tryterra.co" imageUrl="/terra.jpg" dates="2023 - 2024">
           <p>Terra (YC W21), Full-stack engineer</p>
           <ul className="ml-5 list-disc text-grey">
             <li>

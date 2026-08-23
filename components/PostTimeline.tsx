@@ -32,7 +32,7 @@ export function PostTimeline({ posts }: { posts: Post[] }) {
                       {byMonth[month].map((post) => (
                         <li
                           key={`post-link-${post.slug}`}
-                          className="transition-opacity duration-200 hover:opacity-70"
+                          className="duration-200 hover:opacity-70"
                         >
                           <Link href={`/posts/${post.slug}`}>
                             <p className="text-sm font-light">{post.title}</p>

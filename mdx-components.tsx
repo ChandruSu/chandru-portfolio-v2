@@ -41,6 +41,14 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {children}
       </blockquote>
     ),
+    img: ({ ...properties }) => {
+      return (
+        <span className="flex flex-col gap-4 items-center">
+          <img {...properties} className="rounded-lg md:w-2/3 shadow"/>
+          <span className="italic text-grey">{properties.alt}</span>
+        </span>
+      )
+    },
     ...components,
   };
 }
