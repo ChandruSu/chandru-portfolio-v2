@@ -14,7 +14,7 @@ export function PostDetailsBar({ posts }: { posts: Post[] }) {
 
   return (
     <>
-      <div className="flex flex-col gap-3 pr-4 max-md:flex-row">
+      <div className="flex flex-col gap-3 pr-4 max-lg:flex-row">
         {post?.githubURL && (
           <SlideLink
             label="GitHub"
@@ -34,12 +34,10 @@ export function PostDetailsBar({ posts }: { posts: Post[] }) {
           />
         )}
       </div>
-      <div className="flex flex-wrap gap-1">
+      <div className="flex flex-wrap gap-1.5">
         {tags.map((tag) => (
           <Link key={`tag-${tag}`} href={`/posts?tag=${tag}`}>
-            <div className="rounded-full bg-slate-400/10 px-2 py-1 text-xs font-light">
-              {tag}
-            </div>
+            #{tag}
           </Link>
         ))}
       </div>

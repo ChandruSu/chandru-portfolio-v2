@@ -12,14 +12,14 @@ export default function ThemeToggle({ className = "" }: { className?: string }) 
       className={"flex flex-row items-center justify-center gap-1 overflow-hidden p-2 cursor-pointer " + className}
       onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
     >
-      <div className="aspect-square h-[24px] w-[24px] overflow-hidden">
-        <MoonIcon
-          size={24}
-          className="brightness-0 transition-all duration-500 dark:translate-y-[-100%] dark:brightness-100"
-        />
+      <div className="aspect-square h-6 w-6 overflow-hidden">
         <SunIcon
           size={24}
-          className="brightness-0 transition-all duration-500 dark:translate-y-[-100%] dark:brightness-100"
+          className="brightness-0 transition-all duration-500 dark:-translate-y-full dark:brightness-100"
+        />
+        <MoonIcon
+          size={24}
+          className="brightness-0 transition-all duration-500 dark:-translate-y-full dark:brightness-100"
         />
       </div>
     </button>

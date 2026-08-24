@@ -45,6 +45,10 @@ button {
   outline: none;
 }
 
+strong {
+  font-weight: 600;
+}
+
 .link-line {
   position: relative;
   z-index: 1;

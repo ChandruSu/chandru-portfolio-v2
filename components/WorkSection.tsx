@@ -16,7 +16,7 @@ export function WorkSection({ link, imageUrl, children, dates }: WorkSectionProp
           width="200"
           height="200"
           alt="work-image"
-          className="aspect-square max-w-[6rem] rounded"
+          className="aspect-square max-w-24 rounded"
         />
       </a>
       <div className="text-md flex w-full flex-col gap-4">
