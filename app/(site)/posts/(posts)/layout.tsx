@@ -22,7 +22,7 @@ export default function PostLayout({ children }: { children: React.ReactNode }) 
         </div>
 
         {/* MDX contents of post */}
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 max-w-[85vw]">
           {children}
           <CommentsSection />
         </div>
